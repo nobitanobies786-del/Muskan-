@@ -1,0 +1,8 @@
+1. Create Razorpay account and generate TEST keys.
+2. Put RAZORPAY_KEY_ID and RAZORPAY_KEY_SECRET in .env.
+3. Deploy Node project to a backend-capable host.
+4. Add a managed database for production.
+5. Create Shiprocket API user and connect credentials.
+6. Add your real product images through the admin/catalog system.
+7. Replace policy text with your actual business-specific rules and contact details.
+8. Test end-to-end before switching Razorpay to Live Mode.

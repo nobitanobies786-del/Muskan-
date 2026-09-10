@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0a09"><title>MS Muskan Select — Premium Collection</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="announce">✦ FREE SHIPPING ON SELECT ORDERS • COD AVAILABLE • PREMIUM COLLECTION ✦</div>
+<header>
+  <div class="head container">
+    <button class="hamb" id="hamb">☰</button>
+    <a class="brand" href="./"><img id="brandLogo" src="assets/ms-muskan-select-logo.png" alt="MS Muskan Select"><span><b>MS Muskan Select</b><small>Premium Collection</small></span></a>
+    <div class="search"><input id="search" placeholder="Search jewellery & trending finds"><button id="searchBtn">⌕</button></div>
+    <div class="icons"><button id="wishBtn">♡<i id="wishCount">0</i></button><button id="cartBtn">🛒<i id="cartCount">0</i></button><a href="pages/account.html">♙</a></div>
+  </div>
+  <nav id="nav"><div class="container"><a href="#shop">Shop</a><a href="#categories">Categories</a><a href="#everShine">EverShine</a><a href="#trending">Trending</a><a href="#new">New Arrivals</a><a href="#best">Best Sellers</a><a href="#offers">Offers</a></div></nav>
+</header>
+<main>
+<section class="hero"><div class="container heroText"><span>MS MUSKAN SELECT</span><h1>Luxury that feels<br><em>effortlessly yours.</em></h1><p>Premium jewellery and handpicked trending finds, curated for your everyday glow.</p><div><a class="btn gold" href="#shop">Shop Collection</a><a class="btn outline" href="#everShine">Explore EverShine</a></div></div></section>
+<section class="benefits"><div>✦ Premium Curated Picks</div><div>✦ Easy COD Checkout</div><div>✦ Secure Online Payments</div><div>✦ Fast Shipping Integration</div></section>
+<section class="section container" id="categories"><div class="sectionTitle"><div><span>SHOP BY STYLE</span><h2>Find your signature</h2></div></div>
+<div class="cats"><button data-cat="Necklaces">✧<b>Necklaces</b><small>Elegant layers</small></button><button data-cat="Rings">◈<b>Rings</b><small>Made to sparkle</small></button><button data-cat="Bracelets">◎<b>Bracelets</b><small>Everyday shine</small></button><button data-cat="Kadas">◯<b>Kadas</b><small>Classic statement</small></button><button data-cat="Earrings">◇<b>Earrings</b><small>Perfect finish</small></button><button data-cat="Pendants">✦<b>Pendants</b><small>Minimal & chic</small></button></div></section>
+<section class="ever" id="everShine"><div class="container everInner"><div><span>EVERYDAY SHINE</span><h2>EverShine</h2><h3>Tarnish-Proof Collection</h3><p>Premium pieces selected for an elevated everyday jewellery wardrobe.</p><a class="btn gold" href="#shop" data-ever>Shop EverShine</a></div><div class="everVisual"><img id="everLogo" src="assets/ms-muskan-select-logo.png" alt=""></div></div></section>
+<section class="section container" id="shop"><div class="sectionTitle"><div><span>CURATED FOR YOU</span><h2>Shop Collection</h2></div><div class="filters"><select id="catFilter"><option value="">All Categories</option><option>Necklaces</option><option>Rings</option><option>Bracelets</option><option>Kadas</option><option>Earrings</option><option>Pendants</option></select><select id="sort"><option value="featured">Featured</option><option value="low">Price Low</option><option value="high">Price High</option></select></div></div><div class="products" id="products"></div></section>
+<section class="offer" id="offers"><div class="container"><span>PRIVATE OFFER</span><h2>10% off your first order</h2><p>Use <b>MUSKAN10</b> at checkout.</p></div></section>
+<section class="section container" id="trending"><div class="sectionTitle"><div><span>VIRAL NOW</span><h2>Trending Finds</h2></div></div><div class="trend"><button data-q="tumbler">🥤<b>Water Tumblers</b><small>Trending now</small></button><button data-q="compass">🧭<b>Kids Compasses</b><small>Fun finds</small></button><button data-q="money">🐷<b>Money Banks</b><small>Gift-worthy</small></button><button data-q="viral">🔥<b>Viral Finds</b><small>Social picks</small></button></div></section>
+<section class="section container" id="new"><div class="sectionTitle"><div><span>JUST IN</span><h2>New Arrivals</h2></div></div><div class="products" id="newProducts"></div></section>
+<section class="section container" id="best"><div class="sectionTitle"><div><span>CUSTOMER FAVOURITES</span><h2>Best Sellers</h2></div></div><div class="products" id="bestProducts"></div></section>
+</main>
+<footer><div class="container foot"><div><img id="footerLogo" src="assets/ms-muskan-select-logo.png" alt="MS Muskan Select"><p>Premium jewellery + modern trending finds.</p></div><div><b>Shop</b><a href="#everShine">EverShine</a><a href="#new">New Arrivals</a><a href="#best">Best Sellers</a></div><div><b>Help</b><a href="pages/shipping.html">Shipping</a><a href="pages/returns.html">Returns</a><a href="pages/terms.html">Terms</a><a href="pages/privacy.html">Privacy</a></div><div><b>Account</b><a href="pages/account.html">My Account</a><a href="pages/orders.html">Track Order</a><a href="pages/admin.html">Admin</a></div></div><div class="copy">© 2026 MS Muskan Select • Built for real e-commerce integration</div></footer>
+<aside class="cart" id="cart"><div class="cartHead"><h3>Your Bag</h3><button id="closeCart">×</button></div><div id="cartItems"></div><div class="cartBottom"><div><span>Subtotal</span><b id="subtotal">₹0</b></div><div><span>Discount</span><b id="discount">₹0</b></div><div class="grand"><span>Total</span><b id="total">₹0</b></div><a class="btn gold full" href="pages/checkout.html">Checkout Securely</a></div></aside><div class="shade" id="shade"></div>
+<div class="modal" id="modal"><div class="modalBox"><button id="closeModal">×</button><div id="modalBody"></div></div></div>
+<script src="app.js"></script>
+</body></html>
