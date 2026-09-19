@@ -1,6 +1,6 @@
 {
-  "logo": "assets/ms-muskan-select-logo.png",
-  "hero": "assets/hero-luxury.svg",
+  "logo": "ms-muskan-select-logo.png",
+  "hero": "hero-luxury.svg",
   "featuredProductIds": [
     "p1",
     "p2",
