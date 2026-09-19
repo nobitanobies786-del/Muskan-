@@ -9,8 +9,8 @@ require("dotenv").config();
 
 const app = express();
 app.use(express.json({limit:"10mb"}));
-app.use(express.urlencoded({extended:true}));
-app.use(express.static(path.join(__dirname,"public")));
+app.use(express.static(__dirname));
+
 
 const DATA = path.join(__dirname,"data");
 const file = n => path.join(DATA,n);
@@ -27,7 +27,7 @@ const PORT=process.env.PORT||3000;
 const JWT_SECRET=process.env.JWT_SECRET||"CHANGE_ME_BEFORE_PRODUCTION";
 const ADMIN_EMAIL=process.env.ADMIN_EMAIL||"admin@msmuskansselect.com";
 const ADMIN_PASSWORD=process.env.ADMIN_PASSWORD||"ChangeMe123!";
-const ASSETS = path.join(__dirname,"public","assets");
+const ASSETS = path.join(__dirname,"assets");
 if(!fs.existsSync(ASSETS)) fs.mkdirSync(ASSETS,{recursive:true});
 if(!fs.existsSync(file("site-settings.json"))) write("site-settings.json",{logo:"assets/ms-muskan-select-logo.png",hero:"assets/hero-luxury.svg",featuredProductIds:read("products.json",[]).filter(p=>p.featured).map(p=>p.id)});
 if(!fs.existsSync(path.join(__dirname,"public","data"))) fs.mkdirSync(path.join(__dirname,"public","data"),{recursive:true});
@@ -156,5 +156,5 @@ app.get("/api/orders/:id",(req,res)=>{
 });
 
 app.get("/api/health",(req,res)=>res.json({ok:true,store:"MS Muskan Select"}));;
-app.use((req,res)=>res.sendFile(path.join(__dirname,"public","index.html")));
+app.use((req,res)=>res.sendFile(path.join(__dirname,"index.html")));
 app.listen(PORT,()=>console.log(`MS Muskan Select running on port ${PORT}`));
