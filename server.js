@@ -155,7 +155,6 @@ app.get("/api/orders/:id",(req,res)=>{
   res.json({id:o.id,createdAt:o.createdAt,status:o.status,paymentStatus:o.paymentStatus,shippingStatus:o.shippingStatus,total:o.total});
 });
 
-app.get("/api/health",(req,res)=>res.json({ok:true,store:"MS Muskan Select"}));
-app.get("*",(req,res)=>res.sendFile(path.join(__dirname,"public","index.html")));
-
+app.get("/api/health",(req,res)=>res.json({ok:true,store:"MS Muskan Select"}));;
+app.use((req,res)=>res.sendFile(path.join(__dirname,"public","index.html")));
 app.listen(PORT,()=>console.log(`MS Muskan Select running on port ${PORT}`));
